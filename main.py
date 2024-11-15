@@ -80,26 +80,32 @@ print("Thank you Diaby, we will now calculate your health metrics.")
 
 # Get the maximum heart rate from your list, save into a variable
 maximum = max(heart_rate)
-print("Maximum heart rate:", maximum)
+
 # print out the patients maximum heart rate during sleep
 print("Maximum heart rate:", maximum)
 
 # Get the minimum heart rate from your list, save into a variable
 minimum = min(heart_rate)
+
 # print out the patients minimum heart rate during sleep
 print("Minimum heart rate:", minimum)
 
 # Calculate the difference between these values
-...
+diff = maximum - minimum
 # print out this difference
-...
+print(diff)
 
 # if this difference is greater than 30, print that they experienced waking during sleep
-...
+print("they experienced waking during sleep, if", diff > 30)
 # if this difference is greatert han 20, print that their HRV is in a healthy range
-...
+print("their HRV is in a healthy range,if", diff > 20)
 # otherwise, print out that their HRV is low and might indicate sleep issues
-...
+print("their HRV is low and might indicate sleep issues")
 
 # print out their entire heart rate data
-...
+Print("The user's maximum heart rate during sleep is :", maximum)
+print(The user's minimum heart rate during sleep is: ", minimum)
+print(The difference between the maximum and minimum heart rates is: ", diff)
+print(A message indicating the user's potential sleep quality based on the HRV analysis.)
+print("The entire list of heart rate data entered by the user is: " heart_rate)
+
