@@ -85,19 +85,17 @@ minimum = min(heart_rate)
 print("Minimum heart rate:", minimum)
 
 # Calculate the difference between these values
-maximum = 45
-minimum = 32
+diff = (maximum - minimum)
 
 # print out this difference
-diff = (maximum - minimum)
-print(diff)
+print("difference:", diff)
 
 # if this difference is greater than 30, print that they experienced waking during sleep
 if diff > 30:
     print("they experienced waking during sleep")
 
 # if this difference is greatert han 20, print that their HRV is in a healthy range
-elif diff > 20:
+elif 20 < diff < 30:
     print("their HRV is in a healthy range")
     
 # otherwise, print out that their HRV is low and might indicate sleep issues
@@ -105,8 +103,8 @@ else:
     print("their HRV is low and might indicate sleep issues")
 
 # print out their entire heart rate data
-print("")
-print("")
-print("")
-print("")
-print("")
+print("The entire list of heart rate data enter by the user is: ", heart_rate)
+print("The user's maximum heart rate is: ", maximum)
+print("The user's minimum heart rate is: ", minimum)
+print("The difference between the maximum and the minimum heart rate is: ", diff)
+print("The user's potential sleep quality is bad or good depending on the value of their HRV")
